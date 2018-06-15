@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Roboto Slab', serif;
+  background-color: #141414;
+}
+
+nav{
+  text-align: right;
+  text-transform: uppercase;
+  background-color: white;
+  height: 50px;
+  padding-top: 20px;
+}
+
+nav a{
+  color: #141414;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+h1{
+  color: white;
+  text-align: left;
+  margin-top: 75px;
+  font-size: 120px;
+}
+
+tr{
+  border: none;
+}
+
+.socialLink{
+ height: 75px;
+ width: 75px;
+ border-radius: 50%;
+ margin-top: 40px;
+ margin-right: 20px;
+}
+
+.landing{
+  margin-left: 100px;
+}
+
+.landing p{
+  color: white;
+  max-width: 550px;
+  line-height: 30px;
+  margin-top: 20px;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <title>Insecure Content</title>
+  <link rel="stylesheet" href="../substyle.css">
+  <link rel="icon" href="../../donuticon.png"
+</head>
+<body>
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../portfolio.html">Portfolio</a>
+    <a href="../blog.html">Blog</a>
+  </nav>
+
+  <div class="landing">
+    <h1>Insecure Content</h1>
+    <h5 class = "dateHeader">Jun 8, 2018</h5>
+    <div class="mainText">
+      <p>
+        I had just deployed my first web application to Heroku. I had been a full time web development student for 4 days.
+        It was a pretty simple website, a mock restaurant with a homepage and navbar taking you to a couple other basic pages.
+        One of the project requirements was a menu delivered by an API request, which I included as a button that executes the
+        Javascript function to call the menu.
+      </p>
+      <p>
+        My app was live on Heroku (which was no small feat, considering I hadn’t used Express or Node, let alone Heroku until the
+        day before) and all that was left was to test the functionality before I could tweak the design. First I tested the navbar,
+        and to my excitement, it worked as intended. The images all loaded correctly. All that was left was the menu feature.
+        I hit the button, and nothing happened on my page. I was disappointed. I noticed a small shield icon appear in my URL bar.
+        I clicked it and it revealed its meaning:
+      </p>
+      <p>
+        <b>“Insecure Content. Do you wish to continue?”</b>
+      </p>
+      <p>
+        For a moment it was as if this little icon was describing me specifically. Insecure content.
+        That pretty much summed up the bootcamp experience for me thus far. The true nature of this warning is much easier to
+        explain than its metaphorical value. Once I inspected the console of the menu page, I discovered the technical issue.
+        I was trying to deliver mixed content. Specifically, I was delivering HTTP content to a Heroku page, which is natively
+        served as HTTPS.
+      </p>
+      <p>
+        Standard HTTP refers to ‘Hypertext Transfer Protocol’, and basically describes how data is transmitted to users on the
+        internet. HTTPS simply adds ‘Secure’ to the end of the acronym. It encrypts the transaction of information between
+        user and websites. It is not a profoundly complicated distinction, but one that I never would have noticed before
+        this bootcamp. Naturally, pages loaded over HTTPS don’t appreciate elements introduced over just HTTP. The HTTP element
+        creates the opportunity for dangerous or otherwise unexpected action to be taken by a third party during the exchange
+        between user and website. The level of threat in this situation is determined by the level of activity assigned to the
+        mixed content by the developer.
+      </p>
+      <p>
+        Mixed Content can either be considered Passive or Active.
+        <a href="https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content#mixed_content_types_security_threats_associated" target="_blank">
+        This blog</a> provides a more detailed distinction between the two.
+        Essentially, passive content is isolated to its individual place, and could be an image or video among other things.
+        It appears on the page, but doesn’t interact with its operation. Active content, on the other hand, includes scripts and
+        stylesheets and therefore could give access to the inner workings of the page. Naturally, Active mixed content is more
+        dangerous to the user than Passive, but ideally neither would be delivered on an HTTPS server. Normally, this would be
+        just another part of the Web Developer education: Don’t deliver insecure content on a secure server.
+      </p>
+      <p>
+        But this lesson tapped into something a little deeper for me: insecurity in general. I’ve always struggled with
+        insecurity, a burden that is exponentially heavier when trying something new. And this bootcamp is very, very new to me.
+        I have spent most of my life seeking comfort rather than new experiences. I was good at some things, and assumed I was
+        bad at others, so I just did the things I thought I was good at. I touched on this in my previous post so I won’t repeat
+        it again here.
+      </p>
+      <p>
+        However, 7 days into this process I am getting more accustomed to insecurity. It defines my experience almost every time
+        I open my text editor or terminal. Something will go wrong, I’ll get pushed outside of my comfort zone, and I’l have to
+        figure it out. It’s a pattern I’ve repeated countless times over the past week and a half, and it’s starting to be one I
+        almost enjoy.
+      </p>
+      <p>
+        This entry has gone on long enough so I’ll wrap up in saying: if you’ve somehow found this blog and you are staring
+        down the long road of becoming a professional programmer with little prior experience, get used to insecurity.
+        You’re going to experience a lot of it. In your life, it’s better to embrace it than avoid it.
+      </p>
+      <p>
+        But on your webpages, you should probably try to keep things secure.
+      </p>
+    </div>
+
+  </div>
+<script src="../../main.js"></script>
+</body>
+</html>
