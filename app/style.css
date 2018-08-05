@@ -54,14 +54,14 @@ ul li{
 ul li a{
   text-decoration: none;
   color: #141414;
+
 }
 
 ul li p{
   font-size: 20px;
   margin-top: 20px;
   margin-left: 20px;
-  margin-right: 500px;
-
+  margin-right: 20px;
 }
 
 h2{
@@ -154,6 +154,8 @@ h2{
 .profileImage{
   width: 60%;
   height: 60%;
+  min-width: 500px;
+  min-height: 150px;
   display: block;
   margin: auto;
   border-radius: 5px;
@@ -168,10 +170,6 @@ h2{
   text-align: center;
 }
 
-.portfolio-bottom {
-  margin-bottom: 200px;
-}
-
 .portfolio h1{
   font-family: 'Roboto Slab', serif;
   border-top: 2px;
@@ -182,19 +180,41 @@ h2{
   font-size: 80px;
 }
 
+.portfolio-table {
+  border-spacing: 50px;
+}
+
+.portfolio-table-row {
+  text-align: left;
+}
+
+.portfolio-header {
+  margin-top: 50px;
+  color: #141414;
+  margin-bottom: 150px;
+  font-size: 50px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.portfolio-paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .listItemImagePrimary{
-  width: 30%;
-  height: 30%;
+  width: 90%;
+  height: 15%;
   border-radius: 10px;
   border-color: #141414;
   border-style: solid;
   margin-right: 20px;
   margin-bottom: 20px;
-
   display: inline-block;
   float: right;
   text-align: right !important;
-
 }
 
 

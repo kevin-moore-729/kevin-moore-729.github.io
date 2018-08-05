@@ -18,8 +18,8 @@
     <h1 id="landingname">Kevin S. Moore</h1>
     <p>
       I'm a guy in Lexington, KY trying to go from zero to web development hero in 12 weeks!
-      This blog is intended for those with a similar amount of inexperience when it
-      comes to programming. Other topics may include donuts, hip hop, the NBA, and video games.
+      This page is intended to show you a little of who I am and what I can do. I'll also occasionally
+      post blog entries here discussing programming, but other topics may include donuts, hip hop, the NBA, and video games.
     </p>
 
 
@@ -69,7 +69,7 @@
         <span></span>I am a native of Lexington, KY where I graduated from Paul Laurence Dunbar High School and eventually Transylvania University
         with a degree in Religious Studies. Naturally, the next step was to spend 2 years trying to figure out what I wanted to do with
         my life. Out of a desire for sustainable professional relevency and an inherent interest in the way people interact with
-        technology, I settled on Web Development (believe it or not, that Religious Studies degree didn't end up being abundantly useful).
+        technology, I settled on Web Development.
       </p>
       <p>
         <span></span>I intended to enroll in a computer science program at a large university, but on the recommendation of a friend, I looked
@@ -87,63 +87,71 @@
 
   <div class="portfolio" id="portfolio">
     <h1>Past Projects</h1>
-    <ul>
-      <li>
-        <a href = "https://simonsaysvue.herokuapp.com/" target="_blank"><h4>Simon Says</h4></a>
-        <a href = "https://simonsaysvue.herokuapp.com/" target="_blank">
-          <img class="listItemImagePrimary" src="app/images/SimonSays2.png">
-        </a>
-        <p>
-          <b>Description:</b> A clone of the classic Simon Says games. The board will display a series of colors, and the user repeats the colors
-          back in the proper sequence.
-        </p>
-        <p class="portfolio-bottom">
-          <b>Technologies: HTML and CSS</b> are used to compose the basic page. <b>Vue</b> is implemented for the board functionality.
-          <b>Heroku</b> is used to host the finished app.
-        </p>
-      </li>
-      <li>
-        <a href = "https://jsclockcountdowntimer.herokuapp.com/" target="_blank"><h4>Clock and Timer</h4></a>
-        <a href = "https://jsclockcountdowntimer.herokuapp.com/" target="_blank">
-          <img class="listItemImagePrimary" src="app/images/ClockUtility1.png">
-        </a>
-        <p>
-          <b>Description:</b> A utility for keeping time and programming a timer. The app also generates a new quote of the day everyday.
-        </p>
-        <p>
-          <b>Technologies: HTML</b> is used to generate page elements, with <b>Bootstrap</b> used for layout and styling.
-          <b>CSS</b> is used primarily for the analog clock animation and some styling adjustments. <b>Javascript</b> is used to program clocks
-          and the timer, with <b>local storage</b> being used to remember user submitted timers and an <b>API Request</b> being made for the
-          quote of the day. <b>Heroku</b> is used to host the finished app.
-        </p>
-      </li>
-      <li>
-        <a href = "https://faircropper.herokuapp.com/" target="_blank"><h4>Faircropper</h4></a>
-        <a href = "https://faircropper.herokuapp.com/" target="_blank">
+    <table class="portfolio-table">
+      <tr class="portfolio-table-row">
+        <td>
+          <a class="portfolio-header" href = "https://simonsaysvue.herokuapp.com/" target="_blank"><h4>Simon Says</h4></a>
+          <p class="portfolio-paragraph">
+            <b>Description:</b> A clone of the classic Simon Says games. The board will display a series of colors, and the user repeats the colors
+            back in the proper sequence.
+          </p>
+          <p class="portfolio-paragraph">
+            <b>Technologies: HTML and CSS</b> are used to compose the basic page. <b>Vue</b> is implemented for the board functionality.
+            <b>Heroku</b> is used to host the finished app.
+          </p>
+        </td>
+        <td>
+          <img class="listItemImagePrimary" src="app/images/FullScreenSimon.png">
+        </td>
+      </tr>
+      <tr class="portfolio-table-row">
+        <td>
+          <a class="portfolio-header"  href = "https://jsclockcountdowntimer.herokuapp.com/" target="_blank"><h4>Clock & Timer</h4></a>
+          <p class="portfolio-paragraph">
+            <b>Description:</b> A utility for keeping time and programming a timer. The app also generates a new quote of the day everyday.
+          </p>
+          <p class="portfolio-paragraph">
+            <b>Technologies: HTML</b> is used to generate page elements, with <b>Bootstrap</b> used for layout and styling.
+            <b>CSS</b> is used primarily for the analog clock animation and some styling adjustments. <b>Javascript</b> is used to program clocks
+            and the timer, with <b>local storage</b> being used to remember user submitted timers and an <b>API Request</b> being made for the
+            quote of the day. <b>Heroku</b> is used to host the finished app.
+          </p>
+        </td>
+        <td>
+          <img class="listItemImagePrimary" src="app/images/FullScreenClock.png">
+        </td>
+      </tr>
+      <tr class="portfolio-table-row">
+        <td>
+          <a class="portfolio-header"  href = "https://faircropper.herokuapp.com/" target="_blank"><h4>Faircropper</h4></a>
+          <p class="portfolio-paragraph">
+            <b>Description:</b> A mock restaurant webpage created in a day as a project for Web Developer Bootcamp.
+          </p>
+          <p class="portfolio-paragraph">
+            <b>Technologies: HTML</b> is used to generate the basic page elements with <b>Bootstrap</b> maintaining the page layout and style.
+            <b>Javascript</b> is used primarily to generate the daily menu through an <b>API Request</b>. <b>Heroku</b> is used to host the finished app.
+          </p>
+        </td>
+        <td>
           <img class="listItemImagePrimary" src="app/images/Faircropper3.png">
-        </a>
-        <p>
-          <b>Description:</b> A mock restaurant webpage created in a day as a project for Web Developer Bootcamp.
-        </p>
-        <p>
-          <b>Technologies: HTML</b> is used to generate the basic page elements with <b>Bootstrap</b> maintaining the page layout and style.
-          <b>Javascript</b> is used primarily to generate the daily menu through an <b>API Request</b>. <b>Heroku</b> is used to host the finished app.
-        </p>
-      </li>
-      <li>
-        <a href = "https://js-weather-app.herokuapp.com/" target="_blank"><h4>JavaScript Weather App</h4></a>
-        <a href = "https://js-weather-app.herokuapp.com/" target="_blank">
+        </td>
+      </tr>
+      <tr class="portfolio-table-row">
+        <td>
+          <a class="portfolio-header"  href = "https://js-weather-app.herokuapp.com/" target="_blank"><h4>JavaScript Weather</h4></a>
+          <p class="portfolio-paragraph">
+            <b>Description:</b> A dynamic weather application that provides current weather information and changes background image depending on current condition.
+          </p>
+          <p class="portfolio-paragraph">
+            <b>Technologies: HTML</b> is used to generate the basic page elements with <b>Bootstrap</b> determining the simple page.
+            <b>Javascript</b> to fetch weather information through an <b>API Request</b> and to change the background image based on response. <b>Heroku</b> is used to host the finished app.
+          </p>
+        </td>
+        <td>
           <img class="listItemImagePrimary" src="app/images/WeatherApp1.png">
-        </a>
-        <p>
-          <b>Description:</b> A dynamic weather application that provides current weather information and changes background image depending on current condition.
-        </p>
-        <p>
-          <b>Technologies: HTML</b> is used to generate the basic page elements with <b>Bootstrap</b> determining the simple page.
-          <b>Javascript</b> to fetch weather information through an <b>API Request</b> and to change the background image based on response. <b>Heroku</b> is used to host the finished app.
-        </p>
-      </li>
-    </ul>
+        </td>
+      </tr>
+    </table>
   </div>
 
 
