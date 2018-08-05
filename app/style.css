@@ -65,7 +65,7 @@ ul li p{
 }
 
 h2{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .sticky {
@@ -113,7 +113,7 @@ h2{
 }
 
 .landing p{
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
   margin-left: 100px;
   color: white;
   max-width: 550px;
@@ -217,8 +217,6 @@ h2{
   text-align: right !important;
 }
 
-
-
 .blog{
   font-family: 'Roboto Slab', serif;
   margin-left: 100px;
@@ -235,6 +233,8 @@ h2{
   margin-top: 25px;
   font-size: 80px;
 }
+
+
 
 .dateHeader{
   font-family: 'Open Sans', sans-serif;
