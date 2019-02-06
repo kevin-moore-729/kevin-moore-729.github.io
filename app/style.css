@@ -6,9 +6,27 @@
   padding: 0;
 }
 
-/*body{
+body{
   font-family: 'Roboto Slab', serif;
-}*/
+  background: lightgray;
+}
+
+body p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body h2 { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, p {
+  margin: 20px 0;
+}
+
+.content{
+  margin: auto;
+  text-align: center;
+}
 
 nav{
   font-family: 'Open Sans', sans-serif;
