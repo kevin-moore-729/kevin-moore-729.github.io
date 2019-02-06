@@ -15,8 +15,20 @@ body p {
   font-family: 'Open Sans', sans-serif;
 }
 
+body a {
+  text-decoration: none;
+  color: black;
+}
+
 body h2 { 
   font-family: 'Open Sans', sans-serif;
+}
+
+body img{
+  width: 45%;
+  display: block;
+  margin: auto;
+  border: 5px solid black;
 }
 
 h1, h2, p {
