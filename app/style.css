@@ -27,11 +27,20 @@ body img{
   width: 70%;
   display: block;
   margin: auto;
-  margin-top: -10%;
+  margin-top: -8%;
 }
 
 @media screen and (max-width: 800px){
   body img{
     width: 100%;
   }
+}
+
+.content{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content h2{
+  margin: 10px 0;
 }
